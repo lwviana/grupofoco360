@@ -24,6 +24,8 @@ jobs:
         run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg python3-pil
       - name: Montar o site
         run: python3 build.py index.html _site
+      - name: Ajustes de conteudo
+        run: python3 ajustes.py _site/index.html
       - name: Publicar no branch gh-pages
         run: |
           cd _site
