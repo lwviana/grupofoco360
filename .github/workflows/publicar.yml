@@ -1,0 +1,35 @@
+name: Publicar site
+
+# O index.html na raiz e o arquivo original (tudo embutido).
+# A cada alteracao, este fluxo roda o build.py, que separa as midias,
+# gera os videos leves e publica o site pronto no branch gh-pages.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ferramentas
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg python3-pil
+      - name: Montar o site
+        run: python3 build.py index.html _site
+      - name: Publicar no branch gh-pages
+        run: |
+          cd _site
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "Publica site"
+          cd ..
+          git fetch -q _site gh-pages
+          git push -f origin FETCH_HEAD:refs/heads/gh-pages
