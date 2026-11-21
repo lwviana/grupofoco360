@@ -80,6 +80,7 @@ CSS = '''
 .nx-gal .palco-g{position:relative;background:#F3F4F5;border-bottom:6px solid var(--nero);aspect-ratio:5/4;overflow:hidden}
 .nx-gal .palco-g img,.nx-gal .palco-g video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border:0}
 .nx-gal .palco-g img.cobre{object-fit:cover}
+.nx-gal .palco-g [hidden]{display:none!important}
 .nx-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
 .nx-thumbs button{all:unset;box-sizing:border-box;cursor:pointer;aspect-ratio:1;background:#F3F4F5 center/cover no-repeat;border:2px solid var(--linha);position:relative}
 .nx-thumbs button[aria-pressed="true"]{border-color:var(--nero)}
