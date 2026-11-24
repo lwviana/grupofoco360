@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FOCO360 | Gerenciamento de ferramentas, auditoria, consultoria e treinamentos</title>
+<meta name="description" content="A FOCO360, de Joinville (SC), presta serviços de gerenciamento de ferramentas, auditoria, consultoria em gestão de negócios, processos e recursos e treinamentos para a indústria.">
+<link rel="canonical" href="https://grupofoco360.com.br/solucoes.html">
+<meta name="theme-color" content="#1C2833">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="FOCO360">
+<meta property="og:url" content="https://grupofoco360.com.br/solucoes.html">
+<meta property="og:title" content="FOCO360 | Gerenciamento de ferramentas, auditoria, consultoria e treinamentos">
+<meta property="og:description" content="A FOCO360, de Joinville (SC), presta serviços de gerenciamento de ferramentas, auditoria, consultoria em gestão de negócios, processos e recursos e treinamentos para a indústria.">
+<meta property="og:image" content="https://grupofoco360.com.br/assets/img/og-foco360.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/fonts-5.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fonts-1.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"FOCO360","url":"https://grupofoco360.com.br/","logo":"https://grupofoco360.com.br/assets/img/img-6.png","image":"https://grupofoco360.com.br/assets/img/og-foco360.jpg","description":"A FOCO360, de Joinville (SC), presta serviços de gerenciamento de ferramentas, auditoria, consultoria e treinamentos, e é distribuidora autorizada e exclusiva da manta antichamas NERO em Santa Catarina.","telephone":"+55 47 99911-0090","email":"rosinei360@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Joinville","addressRegion":"SC","addressCountry":"BR"},"areaServed":"BR"}</script>
+<style>
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(assets/fonts/fonts-1.woff2) format("woff2")}
+@font-face{font-family:Barlow;font-weight:500;font-display:swap;src:url(assets/fonts/fonts-2.woff2) format("woff2")}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(assets/fonts/fonts-3.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:600;font-display:swap;src:url(assets/fonts/fonts-4.woff2) format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-display:swap;src:url(assets/fonts/fonts-5.woff2) format("woff2")}
+:root{
+  --aco:#1C2833;       /* aço escuro */
+  --aco-2:#263645;
+  --chapa:#EEF1F3;     /* chapa clara */
+  --branco:#FFFFFF;
+  --tinta:#15202B;
+  --cinza:#55636F;
+  --palha:#E3B04B;     /* cor de revenimento: palha */
+  --azul:#2E6FB7;      /* cor de revenimento: azul */
+  --nero:#D7263D;
+  --linha:#D5DBE0;
+  --disp:"Barlow Condensed","Arial Narrow",sans-serif;
+  --txt:Barlow,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{margin:0;font-family:var(--txt);font-size:18px;line-height:1.6;color:var(--tinta);background:var(--chapa);-webkit-font-smoothing:antialiased}
+img,video,canvas,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.02;margin:0;text-wrap:balance;letter-spacing:.2px}
+h1{font-size:clamp(42px,6.2vw,88px);text-transform:uppercase}
+h2{font-size:clamp(36px,4.6vw,64px);text-transform:uppercase}
+h3{font-size:28px;font-weight:600;line-height:1.1}
+p{margin:0;max-width:66ch;text-wrap:pretty}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.sec{padding:104px 0}
+.sec-escura{background:var(--aco);color:var(--branco)}
+.sec-branca{background:var(--branco)}
+.intro{font-size:21px;line-height:1.55;color:var(--cinza);margin-top:20px}
+.sec-escura .intro{color:#C3CDD6}
+:focus-visible{outline:3px solid var(--palha);outline-offset:3px}
+.pula{position:absolute;left:-999px;top:0;background:var(--palha);color:#000;padding:10px 16px;z-index:99}
+.pula:focus{left:8px;top:8px}
+
+/* palco de vídeos de fundo */
+.palco{position:fixed;inset:0;z-index:0;background:var(--aco);overflow:hidden}
+.palco video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}
+.palco video.on{opacity:1}
+main,.rodape{position:relative;z-index:1}
+.com-fundo{background:linear-gradient(180deg,rgba(20,29,38,.86),rgba(20,29,38,.78))!important}
+.hero.com-fundo{background:linear-gradient(90deg,rgba(20,29,38,.93) 0%,rgba(20,29,38,.80) 55%,rgba(20,29,38,.62) 100%)!important}
+.sec-clara{background:var(--chapa)}
+.fundo-ctl{position:fixed;left:16px;bottom:16px;z-index:40;background:rgba(15,22,29,.78);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:3px;padding:0 14px;min-height:44px;font-family:var(--txt);font-size:14px;cursor:pointer}
+.fundo-ctl:hover{border-color:#fff}
+/* roda sobre fundo escuro */
+#ciclo{color:#fff}
+#ciclo .intro{color:#C3CDD6}
+#ciclo .no circle.pt{fill:#1C2833;stroke:#fff}
+#ciclo .no:hover circle.pt,#ciclo .no[aria-pressed="true"] circle.pt{fill:var(--palha);stroke:var(--palha)}
+#ciclo .no text{fill:#B7C3CE}
+#ciclo .no[aria-pressed="true"] text{fill:#fff}
+#ciclo .centro .n{color:var(--palha)}
+#ciclo .centro .g{color:#C3CDD6}
+#ciclo .passo button{border-color:#fff;color:#fff}
+#ciclo .passo button:hover{background:#fff;color:var(--tinta)}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(28,40,51,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.topo img{height:54px;width:auto}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{color:#DCE3E9;text-decoration:none;font-weight:500;font-size:16px;padding:8px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a[aria-current="true"]{color:#fff;border-bottom-color:var(--palha)}
+.menu a.cta{background:var(--palha);color:#141414;padding:9px 18px;border-radius:3px;border:0;font-weight:600}
+.menu a.cta:hover{background:#F0C263}
+.hamb{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:3px;width:46px;height:46px;font-size:22px;cursor:pointer}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--aco);color:#fff;overflow:hidden;display:flex;align-items:center}
+#mira{position:absolute;inset:0;width:100%;height:100%;opacity:.8}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:128px;padding-bottom:80px}
+.marca{width:min(560px,82vw);height:auto;margin-bottom:34px;opacity:0;animation:sobe .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 span{display:block}
+.hero h1 .l2{color:var(--palha)}
+.hero p{font-size:22px;line-height:1.5;color:#D3DBE2;margin-top:28px;max-width:44ch}
+.acoes{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.bt{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:3px;font-weight:600;font-size:18px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--txt)}
+.bt-palha{background:var(--palha);color:#141414}.bt-palha:hover{background:#F0C263}
+.bt-linha{border-color:rgba(255,255,255,.55);color:#fff}.bt-linha:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.bt-nero{background:var(--nero);color:#fff}.bt-nero:hover{background:#E8405A}
+.bt-escuro{background:var(--aco);color:#fff}.bt-escuro:hover{background:var(--aco-2)}
+.graus{position:absolute;right:24px;bottom:28px;z-index:2;font-family:var(--disp);font-weight:600;font-size:20px;color:#9FB0BF;letter-spacing:1px}
+.graus b{color:var(--palha);font-size:34px;font-weight:700;display:inline-block;min-width:3ch;text-align:right}
+.hero h1 span,.hero p,.hero .acoes{opacity:0;transform:translateY(22px);animation:sobe .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .l1{animation-delay:.14s}.hero h1 .l2{animation-delay:.26s}.hero h1 .l3{animation-delay:.38s}.hero p{animation-delay:.54s}.hero .acoes{animation-delay:.68s}
+@keyframes sobe{to{opacity:1;transform:none}}
+
+/* sobre */
+.duas{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+.filos{font-family:var(--disp);font-weight:600;font-size:clamp(26px,2.6vw,34px);line-height:1.2;color:var(--tinta);border-left:6px solid var(--palha);padding-left:24px;margin:0}
+.mvv{display:grid;gap:28px;margin-top:8px}
+.mvv h3{color:var(--azul)}
+.mvv p{margin-top:6px}
+.valores{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+.valores li{border:1.5px solid var(--tinta);padding:6px 14px;border-radius:3px;font-weight:600;font-size:16px}
+
+/* serviços */
+.abas{display:grid;grid-template-columns:300px 1fr;gap:0;margin-top:48px;border:1px solid rgba(255,255,255,.16)}
+.abas-lista{display:flex;flex-direction:column;border-right:1px solid rgba(255,255,255,.16)}
+.aba{background:none;border:0;border-bottom:1px solid rgba(255,255,255,.12);color:#C3CDD6;text-align:left;font-family:var(--disp);font-weight:600;font-size:24px;padding:20px 24px;cursor:pointer;min-height:64px;border-left:5px solid transparent}
+.aba:last-child{border-bottom:0}
+.aba:hover{color:#fff;background:rgba(255,255,255,.04)}
+.aba[aria-selected="true"]{color:#fff;background:var(--aco-2);border-left-color:var(--palha)}
+.painel{padding:40px 44px;min-height:420px}
+.painel[hidden]{display:none}
+.painel h3{font-size:36px;color:var(--palha);font-weight:700;text-transform:uppercase}
+.painel p{color:#D3DBE2;margin-top:14px}
+.painel ul{margin:22px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px}
+.painel li{padding-left:22px;position:relative;color:#EDF1F4;font-size:17px;line-height:1.45}
+.painel li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--palha)}
+.painel.entra{animation:troca .35s ease}
+@keyframes troca{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+
+/* ciclo 360 */
+.ciclo{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:64px;align-items:center;margin-top:40px}
+.roda{position:relative;aspect-ratio:1;width:100%;max-width:560px}
+.roda svg{width:100%;height:100%;overflow:visible}
+.no{cursor:pointer}
+.no circle.pt{fill:var(--branco);stroke:var(--tinta);stroke-width:2.5;transition:r .2s,fill .2s}
+.no:hover circle.pt{fill:var(--palha)}
+.no[aria-pressed="true"] circle.pt{fill:var(--palha);r:17}
+.no text{font-family:var(--disp);font-weight:600;font-size:15px;fill:var(--cinza)}
+.no[aria-pressed="true"] text{fill:var(--tinta);font-weight:700}
+.no:focus{outline:none}.no:focus-visible circle.pt{stroke:var(--azul);stroke-width:5}
+.ponteiro{transition:transform .6s cubic-bezier(.3,.8,.2,1);transform-origin:300px 300px}
+.centro{position:absolute;inset:27%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;pointer-events:none}
+.centro .n{font-family:var(--disp);font-weight:700;font-size:54px;line-height:1;color:var(--azul)}
+.centro .g{font-size:14px;color:var(--cinza);font-weight:500}
+.ciclo-txt h3{font-size:40px;font-weight:700;text-transform:uppercase;min-height:2.2em}
+.ciclo-txt p{margin-top:14px;font-size:20px;min-height:6.4em}
+.passo{display:flex;gap:10px;margin-top:22px}
+.passo button{width:52px;height:52px;border-radius:3px;border:2px solid var(--tinta);background:none;font-size:22px;cursor:pointer;color:var(--tinta)}
+.passo button:hover{background:var(--tinta);color:#fff}
+
+/* tecnologia */
+.etapas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:48px}
+.etapa{background:var(--chapa);padding:36px;border-top:6px solid var(--azul)}
+.etapa .num{font-family:var(--disp);font-weight:700;font-size:20px;color:var(--azul)}
+.etapa h3{font-size:34px;font-weight:700;margin-top:4px;text-transform:uppercase}
+.etapa p{margin-top:12px}
+.etapa ul{margin:18px 0 0;padding-left:20px}
+.etapa li{margin:4px 0}
+.controles{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;padding:0;list-style:none}
+.controles li{background:var(--aco);color:#fff;padding:6px 14px;border-radius:3px;font-weight:500;font-size:16px;margin:0}
+
+/* resultados */
+.metas{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center;margin-top:16px}
+.dez{font-family:var(--disp);font-weight:700;font-size:clamp(150px,22vw,300px);line-height:.8;color:var(--palha)}
+.dez small{font-size:.17em;display:block;color:#fff;line-height:1.15;margin-top:22px;font-weight:600;text-transform:uppercase;max-width:16ch}
+.lista-metas{margin:0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.2)}
+.lista-metas li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:22px;font-family:var(--disp);font-weight:600;letter-spacing:.3px}
+
+/* representações / NERO */
+.rep-cab{padding-top:104px;padding-bottom:56px}
+.nero-hero{position:relative;background:#16090B;color:#fff;overflow:hidden}
+.nero-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.nero-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,9,11,.94) 0%,rgba(22,9,11,.72) 48%,rgba(22,9,11,.25) 100%)}
+.nero-hero .wrap{position:relative;z-index:2;padding-top:96px;padding-bottom:96px}
+.selo{display:inline-block;background:var(--nero);color:#fff;font-family:var(--disp);font-weight:700;font-size:20px;padding:6px 14px;letter-spacing:.6px;text-transform:uppercase}
+.nero-hero h2{font-size:clamp(44px,6.4vw,92px);margin-top:20px;max-width:13ch}
+.nero-hero p{font-size:22px;color:#F0E4E5;margin-top:20px;max-width:46ch}
+.video-ctl{position:absolute;right:24px;bottom:24px;z-index:3;background:rgba(0,0,0,.6);color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:3px;padding:10px 16px;font-family:var(--txt);font-size:15px;cursor:pointer;min-height:44px}
+.nero-corpo{background:var(--branco)}
+.ficha{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start}
+.ficha img{width:100%;height:auto;border-bottom:6px solid var(--nero)}
+.ficha figcaption{font-size:15px;color:var(--cinza);margin-top:8px}
+.ficha figure{margin:0}
+table.spec{width:100%;border-collapse:collapse;margin-top:22px;border-top:3px solid var(--nero)}
+table.spec th,table.spec td{padding:14px 0;border-bottom:1px solid var(--linha);font-size:18px;vertical-align:top}
+table.spec th{text-align:left;font-weight:500;color:var(--cinza);width:42%}
+table.spec td{text-align:right;font-weight:600}
+.aviso{background:var(--aco);color:#fff;padding:24px 28px;border-left:6px solid var(--nero);margin-top:28px}
+.aviso strong{display:block;font-family:var(--disp);font-size:22px;letter-spacing:.5px;text-transform:uppercase;color:#FF8E9C;margin-bottom:6px}
+.aviso p{color:#E6ECF0;font-size:17px}
+.docs{margin-top:32px;border-top:3px solid var(--tinta);padding-top:20px}
+.docs h4{font-family:var(--disp);font-size:28px;font-weight:700;text-transform:uppercase;margin:0}
+.docs p{margin-top:8px;color:var(--cinza);font-size:17px}
+.docs .acoes{margin-top:18px}
+.bt-doc{background:var(--branco);color:var(--tinta);border-color:var(--tinta);font-size:17px;text-align:left;line-height:1.25;padding:10px 20px}
+.bt-doc:hover{background:var(--tinta);color:#fff}
+.setores{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:40px}
+.setor{background:var(--branco);padding:26px;border-top:5px solid var(--nero)}
+.setor h3{font-size:24px;font-weight:700;text-transform:uppercase}
+.setor p{font-size:16.5px;color:var(--cinza);margin-top:10px;line-height:1.5}
+.ambientes{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0;padding:0;list-style:none}
+.ambientes li{border:1.5px solid var(--tinta);border-radius:3px;padding:5px 12px;font-size:15.5px;font-weight:500}
+.usar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:40px;border:1px solid var(--linha);background:var(--branco)}
+.usar button{all:unset;box-sizing:border-box;cursor:pointer;padding:26px;border-right:1px solid var(--linha);border-bottom:5px solid transparent;min-height:210px;display:block}
+.usar button:last-child{border-right:0}
+.usar button:focus-visible{outline:3px solid var(--azul);outline-offset:-3px}
+.usar .k{font-family:var(--disp);font-weight:700;font-size:54px;line-height:1;color:var(--linha);transition:color .25s}
+.usar h3{font-size:24px;font-weight:700;text-transform:uppercase;margin-top:10px}
+.usar p{font-size:16.5px;color:var(--cinza);margin-top:8px;line-height:1.5}
+.usar button[aria-current="step"]{border-bottom-color:var(--nero);background:#FFF5F6}
+.usar button[aria-current="step"] .k{color:var(--nero)}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.demo img{width:100%;height:auto}
+.caixa-contato{background:var(--nero);color:#fff;padding:44px}
+.caixa-contato h3{font-size:38px;font-weight:700;text-transform:uppercase}
+.caixa-contato p{margin-top:12px;color:#FFE9EC}
+.caixa-contato .acoes{margin-top:26px}
+.bt-branco{background:#fff;color:#8E1022}.bt-branco:hover{background:#FFE9EC}
+.bt-linha-b{border-color:#fff;color:#fff}.bt-linha-b:hover{background:rgba(255,255,255,.14)}
+
+/* contato */
+.contato{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:end}
+.frase{font-family:var(--disp);font-weight:600;font-size:clamp(34px,4.4vw,60px);line-height:1.08;margin:0;text-transform:none}
+.frase cite{display:block;font-family:var(--txt);font-style:normal;font-size:18px;font-weight:500;color:#C3CDD6;margin-top:18px}
+.dados{display:grid;gap:18px}
+.dados a{display:block;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:20px 22px;border-radius:3px}
+.dados a:hover{border-color:var(--palha);background:rgba(255,255,255,.05)}
+.dados span{display:block;font-size:15px;color:#9FB0BF}
+.dados b{font-family:var(--disp);font-size:30px;font-weight:600;letter-spacing:.3px}
+.rodape{background:#131C24;color:#9FB0BF;font-size:15px;padding:28px 0}
+.rodape .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.rodape img{height:26px;width:auto;opacity:.85}
+
+@media (max-width:980px){
+  .duas,.ciclo,.metas,.ficha,.demo,.contato{grid-template-columns:1fr;gap:40px}
+  .abas{grid-template-columns:1fr}
+  .abas-lista{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}
+  .aba{white-space:nowrap;border-bottom:0;border-left:0;border-bottom:4px solid transparent;font-size:20px}
+  .aba[aria-selected="true"]{border-bottom-color:var(--palha)}
+  .painel{padding:28px 22px;min-height:0}
+  .painel ul{grid-template-columns:1fr}
+  .etapas{grid-template-columns:1fr}
+  .setores,.usar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .usar button:nth-child(2){border-right:0}
+  .roda{margin:0 auto}
+  .ficha figure{max-width:320px}
+  .sec{padding:72px 0}
+  .menu{position:fixed;inset:84px 0 auto 0;background:var(--aco);flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;display:none;border-bottom:1px solid rgba(255,255,255,.15)}
+  .menu.aberto{display:flex}
+  .menu a{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .menu a.cta{margin-top:14px;text-align:center}
+  .hamb{display:block}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .topo img{height:44px}
+  .marca{margin-bottom:24px}
+  .setores,.usar{grid-template-columns:1fr}
+  .usar button{border-right:0;border-top:1px solid var(--linha);min-height:0}
+  .no text{display:none}
+  .no circle.pt{r:16}
+  .no[aria-pressed="true"] circle.pt{r:22}
+  #mira{opacity:.4}
+  .ciclo-txt h3{font-size:32px;min-height:0}.ciclo-txt p{min-height:0}
+  .rep-cab{padding-top:72px}
+  .graus{display:none}
+  .caixa-contato{padding:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero h1 span,.hero p,.hero .acoes,.marca{animation:none;opacity:1;transform:none}
+  .painel.entra{animation:none}.ponteiro{transition:none}
+}
+.hero{min-height:84svh}
+.aviso.treino{border-left-color:var(--palha)}.aviso.treino strong{color:var(--palha)}
+.parceiro{display:flex;gap:36px;align-items:center;margin-top:44px;max-width:860px;background:var(--aco);color:#fff;padding:34px 38px;border-left:6px solid var(--palha)}
+.parceiro img{width:168px;height:auto;flex:none}
+.parceiro .rot{display:block;font-family:var(--disp);font-weight:700;font-size:18px;letter-spacing:1px;text-transform:uppercase;color:var(--palha)}
+.parceiro h3{font-size:30px;margin:6px 0 8px;color:#fff}
+.parceiro p{margin:0 0 18px;color:#C3CDD6;font-size:18px}
+@media (max-width:640px){.parceiro{flex-direction:column;align-items:flex-start;gap:22px;padding:28px 24px}.parceiro img{width:140px}}
+
+/* NERO ampliada */
+.nero-hero .wrap{padding-top:120px;padding-bottom:132px}
+.nero-hero video{opacity:.78}
+.nero-hero::after{background:linear-gradient(90deg,rgba(14,6,7,.95) 0%,rgba(14,6,7,.74) 44%,rgba(14,6,7,.12) 100%)}
+.nero-hero .video-ctl{top:24px;bottom:auto}
+.nero-hero .nota{position:absolute;left:24px;bottom:16px;z-index:3;font-size:13px;color:#D9C6C8;max-width:60ch}
+.nero-hero h2 em{font-style:normal;color:#FF5A6E}
+.nx-num{background:var(--nero);color:#fff}
+.nx-num .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.nx-num div{padding:30px 22px;border-right:1px solid rgba(255,255,255,.28)}
+.nx-num div:last-child{border-right:0}
+.nx-num b{display:block;font-family:var(--disp);font-weight:700;font-size:46px;line-height:1;letter-spacing:.5px}
+.nx-num span{display:block;margin-top:8px;font-size:16px;color:#FFE3E6}
+.nx-imp{background:#120708;color:#fff;position:relative;overflow:hidden}
+.nx-imp .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.nx-imp figure{margin:0;position:relative}
+.nx-imp img{width:100%;height:auto;display:block;border-bottom:6px solid var(--nero)}
+.nx-imp figcaption,.nx-leg{font-size:13px;color:#A99A9C;margin-top:8px}
+.nx-imp h3{font-size:clamp(38px,4.6vw,62px);font-weight:700;text-transform:uppercase;line-height:1.02}
+.nx-imp h3 em{font-style:normal;color:#FF5A6E}
+.nx-imp .intro{color:#E3D5D6}
+.nx-lista{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.nx-lista li{padding:16px 0;border-top:1px solid rgba(255,255,255,.18)}
+.nx-lista b{display:block;font-family:var(--disp);font-size:23px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.nx-lista span{display:block;color:#CDBFC0;font-size:16px;margin-top:2px}
+.nx-fecho{margin-top:28px;font-size:20px;font-weight:600;color:#fff;border-left:5px solid var(--nero);padding-left:16px}
+.ficha{grid-template-columns:minmax(0,460px) 1fr}
+.nx-gal .palco-g{position:relative;background:#F3F4F5;border-bottom:6px solid var(--nero);aspect-ratio:5/4;overflow:hidden}
+.nx-gal .palco-g img,.nx-gal .palco-g video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;border:0}
+.nx-gal .palco-g img.cobre{object-fit:cover}
+.nx-gal .palco-g [hidden]{display:none!important}
+.nx-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.nx-thumbs button{all:unset;box-sizing:border-box;cursor:pointer;aspect-ratio:1;background:#F3F4F5 center/cover no-repeat;border:2px solid var(--linha);position:relative}
+.nx-thumbs button[aria-pressed="true"]{border-color:var(--nero)}
+.nx-thumbs button:focus-visible{outline:3px solid var(--azul);outline-offset:2px}
+.nx-thumbs .play::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-35%,-50%);border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;filter:drop-shadow(0 0 4px rgba(0,0,0,.7))}
+.nx-selos{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.nx-selos li{background:#FFF0F2;color:#8E1022;font-weight:600;font-size:15px;padding:6px 12px;border-radius:3px}
+.setor{padding:0;display:flex;flex-direction:column}
+.setor img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.setor h3,.setor p{padding:0 22px}.setor h3{margin-top:20px}.setor p{padding-bottom:24px}
+.nx-uso{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:40px;margin-top:40px;align-items:stretch}
+.nx-uso figure{margin:0;position:relative;background:#000}
+.nx-uso figure{aspect-ratio:4/5;overflow:hidden}
+.nx-uso figure video{width:100%;height:100%;object-fit:cover;display:block}
+.nx-uso figure figcaption{position:absolute;left:0;top:0;background:rgba(0,0,0,.66);color:#fff;font-size:13px;padding:6px 12px}
+.nx-uso .usar{margin-top:0;grid-template-columns:1fr 1fr}
+.nx-uso .usar button{min-height:0}
+.nx-uso .usar button:nth-child(2n){border-right:0}
+.nx-uso .usar button:nth-child(-n+2){border-top:0}
+.nx-uso .usar button{border-top:1px solid var(--linha)}
+.nx-faq{max-width:900px}
+.nx-faq details{border-bottom:1px solid var(--linha);background:var(--branco)}
+.nx-faq details:first-of-type{border-top:3px solid var(--nero)}
+.nx-faq summary{cursor:pointer;list-style:none;padding:22px 56px 22px 24px;font-family:var(--disp);font-size:26px;font-weight:600;position:relative}
+.nx-faq summary::-webkit-details-marker{display:none}
+.nx-faq summary::after{content:"+";position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:32px;color:var(--nero);font-family:var(--txt);font-weight:400}
+.nx-faq details[open] summary::after{content:"\2212"}
+.nx-faq summary:focus-visible{outline:3px solid var(--azul);outline-offset:-3px}
+.nx-faq p{padding:0 24px 24px;color:var(--cinza);font-size:18px;line-height:1.55;margin:0}
+.nx-redes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.nx-redes button{all:unset;box-sizing:border-box;cursor:pointer;display:block;color:#fff;background:var(--aco);padding:26px 26px 76px;border-top:5px solid var(--nero);min-height:200px;position:relative}
+.nx-redes button:hover{background:var(--aco-2)}
+.nx-redes button:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.nx-redes i{position:absolute;left:26px;bottom:22px;width:44px;height:44px;border-radius:50%;background:var(--nero)}
+.nx-redes i::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-35%,-50%);border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}
+.nx-modal{position:fixed;inset:0;z-index:90;background:rgba(8,12,16,.88);display:flex;align-items:center;justify-content:center;padding:16px}
+.nx-modal[hidden]{display:none}
+.nx-modal .cx{position:relative;width:min(420px,100%);height:min(780px,calc(100vh - 32px));background:#fff;display:flex;flex-direction:column}
+.nx-modal iframe{flex:1;width:100%;border:0;background:#fff}
+.nx-modal .rod{padding:10px 14px;font-size:14px;color:var(--cinza);background:#fff;border-top:1px solid var(--linha)}
+.nx-modal .rod a{color:var(--tinta);font-weight:600}
+.nx-modal .fx{position:absolute;right:0;top:-46px;background:#fff;color:var(--tinta);border:0;font:600 15px var(--txt);padding:9px 16px;cursor:pointer;border-radius:3px}
+@media (max-width:640px){.nx-modal .fx{top:8px;right:8px;z-index:2;box-shadow:0 2px 10px rgba(0,0,0,.4)}}
+.nx-redes small{display:block;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:#FF8E9C;font-weight:600}
+.nx-redes b{display:block;font-family:var(--disp);font-size:27px;font-weight:700;text-transform:uppercase;margin-top:8px;line-height:1.1}
+.nx-redes span{display:block;margin-top:14px;font-size:15px;color:#C3CDD6}
+.nx-pans{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.4);font-size:17px;color:#FFE9EC}
+.nx-pans a{color:#fff;font-weight:600}
+.nx-fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;align-items:center;gap:10px;background:#1FAF5A;color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 20px;border-radius:40px;box-shadow:0 6px 22px rgba(0,0,0,.35)}
+.nx-fab:hover{background:#17964B}
+.nx-fab svg{width:22px;height:22px;flex:none}
+@media (max-width:980px){
+  .nx-num .wrap{grid-template-columns:repeat(2,minmax(0,1fr));padding:0}
+  .nx-num div{border-bottom:1px solid rgba(255,255,255,.28)}
+  .nx-num div:nth-child(2n){border-right:0}
+  .nx-num div:last-child{grid-column:1/-1;border-bottom:0}
+  .nx-imp .wrap,.nx-uso,.ficha{grid-template-columns:1fr;gap:36px}
+  .nx-uso figure{max-width:420px}
+  .ficha figure{max-width:none}
+  .nx-redes{grid-template-columns:1fr}
+  .nx-redes button{min-height:0}
+}
+@media (max-width:640px){
+  .nx-lista{grid-template-columns:1fr}
+  .nx-uso .usar{grid-template-columns:1fr}
+  .nx-uso .usar button{border-right:0}
+  .nx-uso .usar button:nth-child(2){border-top:1px solid var(--linha)}
+  .nero-hero .wrap{padding-top:88px;padding-bottom:120px}
+  .nx-fab span{display:none}.nx-fab{padding:14px}
+  .nx-faq summary{font-size:22px}
+}
+
+/* foco NERO */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.menu a.sol{border:1px solid rgba(255,255,255,.6);border-radius:3px;padding:9px 14px}
+.menu a.sol:hover{background:rgba(255,255,255,.1)}
+body.so-nero .nero-hero{min-height:94svh;display:flex;align-items:center}
+body.so-nero .nero-hero .wrap{width:100%;padding-top:140px}
+.nero-hero .mais{display:inline-block;margin-top:26px;color:#fff;font-weight:600;font-size:17px;text-underline-offset:4px}
+.nx-mais{background:var(--aco);color:#fff;padding:72px 0}
+.nx-mais .wrap{display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.nx-mais img{width:230px;height:auto;display:block;margin-bottom:18px}
+.nx-mais h2{font-size:clamp(30px,3.4vw,44px);font-weight:700;text-transform:uppercase;color:#fff;line-height:1.05}
+.nx-mais p{margin-top:10px;color:#C3CDD6;max-width:56ch}
+body.so-nero .menu a{white-space:nowrap}
+@media (min-width:981px) and (max-width:1180px){body.so-nero .menu{gap:18px}body.so-nero .menu a{font-size:15px}.menu a.sol{padding:8px 10px}.menu a.sol i{display:none}}
+</style>
+</head>
+<body>
+<a class="pula" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="palco" aria-hidden="true"><video muted loop playsinline preload="auto" poster="assets/img/img-1.jpg" data-hq="assets/video/video-1.mp4"><source src="assets/video/video-1-low.mp4" type="video/mp4"></video><video muted loop playsinline preload="none" poster="assets/img/img-2.jpg" data-hq="assets/video/video-2.mp4"><source src="assets/video/video-2-low.mp4" type="video/mp4"></video><video muted loop playsinline preload="none" poster="assets/img/img-3.jpg" data-hq="assets/video/video-3.mp4"><source src="assets/video/video-3-low.mp4" type="video/mp4"></video><video muted loop playsinline preload="none" poster="assets/img/img-4.jpg" data-hq="assets/video/video-4.mp4"><source src="assets/video/video-4-low.mp4" type="video/mp4"></video><video muted loop playsinline preload="none" poster="assets/img/img-5.jpg" data-hq="assets/video/video-5.mp4"><source src="assets/video/video-5-low.mp4" type="video/mp4"></video></div>
+<button class="fundo-ctl" id="fctl" type="button" aria-pressed="false">Pausar fundo</button>
+
+<header class="topo">
+  <div class="wrap">
+    <a href="#inicio" aria-label="FOCO360, início"><img src="assets/img/img-6.png" alt="FOCO360" width="304" height="70"></a>
+    <button class="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a class="sol" href="./">Manta NERO</a>
+      <a href="#sobre">Quem somos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#ciclo">Controle 360°</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a class="cta" href="#contato">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="hero com-fundo" id="inicio" data-fundo="0">
+  <canvas id="mira" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <img class="marca" src="assets/img/img-6.png" alt="FOCO360" width="760" height="176">
+    <h1><span class="l1">Nós cuidamos</span><span class="l2">de cada etapa do processo.</span><span class="l3">Você cuida da estratégia.</span></h1>
+    <p>Gerenciamento de ferramentas, auditoria, consultoria, treinamentos e distribuição exclusiva da manta antichamas NERO. De Joinville, Santa Catarina, para todo o Brasil.</p>
+    <div class="acoes">
+      <a class="bt bt-nero" href="./">Conhecer a manta NERO</a>
+      <a class="bt bt-palha" href="#servicos">Ver os serviços</a>
+      <a class="bt bt-linha" href="#contato">Falar com a FOCO360</a>
+    </div>
+  </div>
+  <div class="graus" aria-hidden="true"><b id="grau">0</b>° de 360°</div>
+</section>
+
+
+<section class="sec sec-branca" id="sobre">
+  <div class="wrap duas">
+    <div>
+      <h2>Quem somos</h2>
+      <p class="intro">A FOCO360 nasceu para prestar serviços profissionais de gerenciamento, auditoria e consultoria em gestão de negócios, processos e recursos.</p>
+      <p style="margin-top:20px">Também ministramos palestras e cursos sobre ferramentas de corte e processos de usinagem, motivação, empreendedorismo e gestão de pessoas, em empresas e instituições de todo o Brasil.</p>
+      <blockquote class="filos" style="margin-top:40px">Focamos nossa experiência em todas as etapas do processo do cliente, para que ele possa focar nas estratégias do seu negócio.</blockquote>
+      <p style="margin-top:28px;color:var(--cinza)">Para ter o foco em 360 graus, o trabalho precisa ser eficiente e eficaz. Por isso todos na equipe têm a mesma carga de trabalho e o mesmo nível de conhecimento, prontos para encontrar soluções no menor tempo.</p>
+    </div>
+    <div class="mvv">
+      <div><h3>Missão</h3><p>Oferecer soluções inteligentes para que nossos clientes se mantenham competitivos e lucrativos em seus segmentos, gerando sempre oportunidades de negócios.</p></div>
+      <div><h3>Visão</h3><p>Ser a primeira opção em serviços de gerenciamento e consultorias profissionais, com as melhores soluções e o desenvolvimento contínuo dos nossos processos.</p></div>
+      <div><h3>Valores</h3>
+        <ul class="valores"><li>Acidente zero</li><li>Criatividade</li><li>Desenvolvimento contínuo</li><li>Equilíbrio</li><li>Inovação</li><li>Transparência</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-escura com-fundo" id="servicos" data-fundo="1">
+  <div class="wrap">
+    <h2>O que fazemos</h2>
+    <p class="intro">Uma unidade de negócios dedicada à gestão de ferramentas e sistemas para reduzir custos de produção. Definimos com cada cliente o programa de gerenciamento que melhor se adapta à sua fábrica.</p>
+    <div class="abas">
+      <div class="abas-lista" role="tablist" aria-label="Serviços">
+        <button class="aba" role="tab" id="t0" aria-controls="p0" aria-selected="true">Gerenciamento</button>
+        <button class="aba" role="tab" id="t1" aria-controls="p1" aria-selected="false" tabindex="-1">Presseting</button>
+        <button class="aba" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Logística e ronda</button>
+        <button class="aba" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Suporte técnico</button>
+        <button class="aba" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Treinamentos</button>
+        <button class="aba" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1">Equipe dedicada</button>
+      </div>
+      <div>
+        <div class="painel" role="tabpanel" id="p0" aria-labelledby="t0">
+          <h3>Gerenciamento de ferramentas</h3>
+          <p>Assumimos a rotina das ferramentas para que o cliente tenha foco total no seu núcleo de negócios.</p>
+          <ul>
+            <li>Desenvolvimento de tecnologias e processos, com serviços técnicos conforme a necessidade</li>
+            <li>Controle e análise de todos os itens de consumo e de logística, com relatórios</li>
+            <li>Atendimento a fornecedores, buscando as melhores condições técnicas junto com o cliente</li>
+            <li>Alinhamento de metas, controles e indicadores do processo</li>
+            <li>Planos de ação com as principais ferramentas da qualidade</li>
+            <li>Indicadores apresentados todo mês, em gráficos e planilhas</li>
+          </ul>
+        </div>
+        <div class="painel" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+          <h3>Presseting</h3>
+          <p>Planejamento e execução do pré-set, com rastreabilidade no chão de fábrica e por aplicação.</p>
+          <ul>
+            <li>Fila de montagem e previsão de entrega</li>
+            <li>Vínculo com a instrução de trabalho de montagem</li>
+            <li>Índice de não qualidade, em valor e em quantidade</li>
+            <li>Montagens urgentes e programadas</li>
+            <li>Tempo médio de montagem e custo por pré-set</li>
+            <li>Custo de ferramenta por operação</li>
+          </ul>
+        </div>
+        <div class="painel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <h3>Logística e ronda</h3>
+          <p>Mapeamos as ferramentas com maior índice de troca e fazemos a cronoanálise de cada item, para entregar cada ferramenta no local de uso na hora certa.</p>
+          <ul>
+            <li>Rondas em horários definidos</li>
+            <li>Abastecimento do kanban</li>
+            <li>Recolhimento das ferramentas usadas</li>
+            <li>Entrega e recolhimento de kits</li>
+            <li>Atendimento 24 horas e a emergências</li>
+            <li>Operador na máquina, sem tempo ocioso</li>
+          </ul>
+        </div>
+        <div class="painel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <h3>Suporte técnico</h3>
+          <p>Assistência no processo e desenvolvimento de melhorias. Todo item proposto precisa comprovar tecnicamente os ganhos antes de ser implantado.</p>
+          <ul>
+            <li>Atendimento em tempo integral</li>
+            <li>Atendimento de quebras e anomalias do processo</li>
+            <li>Novas tecnologias e atualização de classes</li>
+            <li>Redução de custo</li>
+            <li>Projetos novos e otimizações</li>
+            <li>Ferramentas especiais</li>
+          </ul>
+        </div>
+        <div class="painel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+          <h3>Treinamentos e palestras</h3>
+          <p>Treinamento e suporte técnico local para aperfeiçoar o processo e reduzir as paradas de máquina causadas pelo uso das ferramentas.</p>
+          <ul>
+            <li>Ferramentas de corte</li>
+            <li>Processos de usinagem</li>
+            <li>Gestão de pessoas</li>
+            <li>Empreendedorismo</li>
+            <li>Palestras motivacionais</li>
+            <li>Cursos em empresas e instituições</li>
+          </ul>
+        </div>
+        <div class="painel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+          <h3>Equipe dedicada na sua planta</h3>
+          <p>Cada empresa é diferente. Por isso dimensionamos a equipe de acordo com a sua estrutura e a sua necessidade, e definimos o escopo junto com você.</p>
+          <ul>
+            <li>Coordenação do programa</li>
+            <li>Técnicos de processos</li>
+            <li>Técnicos de logística</li>
+            <li>Técnicos de pré-set</li>
+            <li>Cobertura dos turnos conforme a operação do cliente</li>
+            <li>Abertura de filial junto ao cliente, quando o projeto pede</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec com-fundo" id="ciclo" data-fundo="2">
+  <div class="wrap">
+    <h2>Controle em 360 graus</h2>
+    <p class="intro">Dez frentes de controle que giram juntas. Toque em um ponto do círculo para ver o que acontece em cada uma.</p>
+    <div class="ciclo">
+      <div class="roda">
+        <svg viewBox="0 0 600 600" role="group" aria-label="Frentes de controle">
+          <circle cx="300" cy="300" r="205" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="2"/>
+          <circle cx="300" cy="300" r="150" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1" stroke-dasharray="3 7"/>
+          <g id="ticks"></g>
+          <g class="ponteiro" id="ponteiro"><line x1="300" y1="300" x2="300" y2="112" stroke="#E3B04B" stroke-width="4" stroke-linecap="round"/><circle cx="300" cy="300" r="9" fill="#E3B04B"/></g>
+          <g id="nos"></g>
+        </svg>
+        <div class="centro" aria-hidden="true"><span class="n" id="cgrau">0°</span><span class="g" id="cpos">1 de 10</span></div>
+      </div>
+      <div class="ciclo-txt" aria-live="polite">
+        <h3 id="ctit"></h3>
+        <p id="cdesc"></p>
+        <div class="passo">
+          <button type="button" id="cant" aria-label="Frente anterior">&#8592;</button>
+          <button type="button" id="cprox" aria-label="Próxima frente">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-branca" id="tecnologia">
+  <div class="wrap">
+    <h2>Tecnologias e parcerias</h2>
+    <p class="intro">A implantação acontece em duas etapas. Primeiro o controle por software; depois, o armário inteligente para os itens de maior giro.</p>
+    <div class="etapas">
+      <div class="etapa">
+        <span class="num">Primeira etapa</span>
+        <h3>Software de gerenciamento</h3>
+        <p>O acesso aos itens armazenados é controlado eletronicamente pelo software, de acordo com autorizações predefinidas. Um sistema de ocorrências complementa o controle e reduz as perdas do processo.</p>
+        <ul class="controles"><li>Rastreabilidade</li><li>Compras</li><li>Controle</li><li>Agilidade</li><li>Integração</li><li>Inovação</li></ul>
+        <p style="margin-top:20px;font-weight:600">O sistema de ocorrências acompanha:</p>
+        <ul><li>Preparações, pré-set e set-up</li><li>Performance e vida útil</li><li>Retrabalho e quebras</li></ul>
+      </div>
+      <div class="etapa" style="border-top-color:var(--palha)">
+        <span class="num" style="color:#9A6E12">Segunda etapa</span>
+        <h3>Armário inteligente</h3>
+        <p>Armazena os principais itens de alto giro e de maior custo, com retirada controlada e registrada.</p>
+        <p style="margin-top:20px;font-weight:600">As vantagens:</p>
+        <ul><li>Redução do valor de estoque e dos ativos</li><li>Disponibilidade imediata das ferramentas de giro</li><li>Retirada por unidade, sem depender da embalagem fechada</li><li>Indicadores de consumo</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-escura com-fundo" id="resultados" data-fundo="3">
+  <div class="wrap">
+    <h2>O que um programa busca entregar</h2>
+    <div class="metas">
+      <div class="dez" aria-label="Meta de redução de custo de 10 por cento ao ano"><span id="dezn">10</span>%<small>de redução de custo ao ano, como meta</small></div>
+      <ul class="lista-metas">
+        <li>Estoque assertivo</li>
+        <li>Zero parada de máquina por falta de insumos</li>
+        <li>Trabalho padronizado, sem retrabalho</li>
+        <li>Equipe técnica e focada em resultados</li>
+        <li>Aumento de produtividade</li>
+        <li>Redução de sucatas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-escura com-fundo" id="contato" data-fundo="4">
+  <div class="wrap contato">
+    <div>
+      <h2>Fale conosco</h2>
+      <blockquote class="frase" style="margin-top:36px">“Desejo ser útil, e não importante.”<cite>Rosinei da Silveira, FOCO360</cite></blockquote>
+    </div>
+    <div class="dados">
+      <a href="https://wa.me/5547999110090" target="_blank" rel="noopener"><span>WhatsApp e telefone</span><b>(47) 99911-0090</b></a>
+      <a href="mailto:rosinei360@gmail.com"><span>E-mail</span><b>rosinei360@gmail.com</b></a>
+      <a href="#inicio"><span>Onde estamos</span><b>Joinville, Santa Catarina</b></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <img src="assets/img/img-6.png" alt="FOCO360" width="113" height="26">
+    <span>FOCO360 consultoria, treinamentos e distribuição exclusiva NERO. Joinville, SC. grupofoco360.com.br. Vídeos de fundo: Mixkit.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* menu */
+var hb=document.querySelector('.hamb'),menu=document.getElementById('menu');
+hb.addEventListener('click',function(){var a=menu.classList.toggle('aberto');hb.setAttribute('aria-expanded',a);hb.setAttribute('aria-label',a?'Fechar menu':'Abrir menu');});
+menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('aberto');hb.setAttribute('aria-expanded',false);}});
+var links=[].slice.call(menu.querySelectorAll('a[href^="#"]'));
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.setAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id?'true':'false');});}});},{rootMargin:'-45% 0px -50% 0px'});
+  links.forEach(function(l){var s=document.querySelector(l.getAttribute('href'));if(s)io.observe(s);});
+}
+
+/* hero: mira de medição que acompanha a rolagem e o ponteiro do mouse */
+var cv=document.getElementById('mira'),cx=cv.getContext('2d'),W=0,H=0,D=1,ang=0,alvo=0,mx=.8,my=.5,tx=.8,ty=.5,fa=[],grau=document.getElementById('grau');
+function tam(){D=Math.min(window.devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*D;cv.height=H*D;cx.setTransform(D,0,0,D,0,0);}
+function novaF(){var a=Math.random()*Math.PI*2,v=1.2+Math.random()*3.2;return{x:0,y:0,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1,l:1,d:.012+Math.random()*.02};}
+function des(){
+  cx.clearRect(0,0,W,H);
+  var estreito=W<820, ox=W*(estreito?.5:mx), oy=H*(estreito?.36:my), R=Math.min(W,H)*(estreito?.46:.42);
+  cx.save();cx.translate(ox,oy);
+  var i,r;
+  for(i=0;i<4;i++){r=R*(1-i*.21);cx.beginPath();cx.arc(0,0,r,0,Math.PI*2);cx.strokeStyle='rgba(255,255,255,'+(.10+i*.035)+')';cx.lineWidth=i===0?2:1;cx.stroke();}
+  cx.save();cx.rotate(ang);
+  for(i=0;i<72;i++){var a=i/72*Math.PI*2,gr=i%6===0,c=Math.cos(a),s=Math.sin(a);cx.beginPath();cx.moveTo(c*R,s*R);cx.lineTo(c*(R-(gr?22:10)),s*(R-(gr?22:10)));cx.strokeStyle=gr?'rgba(227,176,75,.85)':'rgba(255,255,255,.28)';cx.lineWidth=gr?2:1;cx.stroke();}
+  cx.restore();
+  cx.save();cx.rotate(-ang*.6);
+  for(i=0;i<36;i++){var a2=i/36*Math.PI*2,c2=Math.cos(a2),s2=Math.sin(a2),r2=R*.58;cx.beginPath();cx.moveTo(c2*r2,s2*r2);cx.lineTo(c2*(r2-8),s2*(r2-8));cx.strokeStyle='rgba(126,170,221,.5)';cx.lineWidth=1;cx.stroke();}
+  cx.restore();
+  /* arco de progresso */
+  var p=((ang%(Math.PI*2))+Math.PI*2)%(Math.PI*2);
+  cx.beginPath();cx.arc(0,0,R*.79,-Math.PI/2,-Math.PI/2+p);cx.strokeStyle='#E3B04B';cx.lineWidth=5;cx.lineCap='round';cx.stroke();
+  /* cruz de mira */
+  cx.strokeStyle='rgba(255,255,255,.22)';cx.lineWidth=1;
+  cx.beginPath();cx.moveTo(-R*1.15,0);cx.lineTo(-R*.12,0);cx.moveTo(R*.12,0);cx.lineTo(R*1.15,0);cx.moveTo(0,-R*1.15);cx.lineTo(0,-R*.12);cx.moveTo(0,R*.12);cx.lineTo(0,R*1.15);cx.stroke();
+  cx.beginPath();cx.arc(0,0,R*.05,0,Math.PI*2);cx.fillStyle='#E3B04B';cx.fill();
+  /* ponteiro */
+  cx.save();cx.rotate(p-Math.PI/2);cx.beginPath();cx.moveTo(R*.1,0);cx.lineTo(R*.74,0);cx.strokeStyle='rgba(255,255,255,.8)';cx.lineWidth=2;cx.stroke();
+  var px=R*.79,py=0;cx.restore();
+  /* fagulhas no ponto de contato */
+  var fx=Math.cos(p-Math.PI/2)*R*.79,fy=Math.sin(p-Math.PI/2)*R*.79;
+  if(!RM&&fa.length<70&&Math.random()<.5){var f=novaF();f.x=fx;f.y=fy;fa.push(f);}
+  for(i=fa.length-1;i>=0;i--){var q=fa[i];q.x+=q.vx;q.y+=q.vy;q.vy+=.05;q.l-=q.d;if(q.l<=0){fa.splice(i,1);continue;}cx.beginPath();cx.moveTo(q.x,q.y);cx.lineTo(q.x-q.vx*3,q.y-q.vy*3);cx.strokeStyle='rgba(255,'+(170+Math.round(60*q.l))+',90,'+q.l+')';cx.lineWidth=1.6;cx.stroke();}
+  cx.restore();
+  grau.textContent=Math.round(p/(Math.PI*2)*360);
+}
+function laco(){
+  alvo+=RM?0:.0016;
+  var sc=Math.min(1,window.scrollY/Math.max(1,window.innerHeight));
+  var dest=alvo+sc*Math.PI*1.2;
+  ang+=(dest-ang)*.08;mx+=(tx-mx)*.05;my+=(ty-my)*.05;
+  des();
+  if(!RM)requestAnimationFrame(laco);
+}
+tam();window.addEventListener('resize',function(){tam();if(RM)des();});
+document.querySelector('.hero').addEventListener('pointermove',function(e){var b=cv.getBoundingClientRect();tx=.8+((e.clientX-b.left)/b.width-.5)*.05;ty=.5+((e.clientY-b.top)/b.height-.5)*.06;});
+if(RM){ang=Math.PI*.6;des();window.addEventListener('scroll',function(){ang=Math.PI*.6+Math.min(1,window.scrollY/window.innerHeight)*Math.PI;des();},{passive:true});}else{laco();}
+
+/* qualidade progressiva: o vídeo leve toca de imediato; o de alta qualidade baixa inteiro em segundo plano
+   e só entra quando está completo, no mesmo ponto da reprodução. Em conexão lenta ou economia de dados, fica no leve. */
+var NC=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+var LENTO=!!(NC&&(NC.saveData||/(^|-)2g$/.test(NC.effectiveType||'')));
+var filaHQ=Promise.resolve();
+function melhora(v,pronto){
+  if(!v||!v.dataset.hq||v._hq||LENTO||!window.fetch||!window.URL)return;
+  v._hq=1;var hq=v.dataset.hq;
+  filaHQ=filaHQ.then(function(){return fetch(hq).then(function(r){if(!r.ok)throw 0;return r.blob();}).then(function(b){return new Promise(function(ok){
+    var n=document.createElement('video'),feito=false,u=URL.createObjectURL(b);
+    function fim(){if(!feito){feito=true;ok();}}
+    n.muted=true;n.loop=true;n.playsInline=true;n.setAttribute('muted','');n.setAttribute('playsinline','');n.preload='auto';
+    n.poster=v.poster;n.className=v.className;if(v.id)n.id=v.id;
+    if(v.getAttribute('aria-label'))n.setAttribute('aria-label',v.getAttribute('aria-label'));
+    n._hq=1;
+    function troca(){
+      if(feito||!v.parentNode)return fim();
+      var tocava=!v.paused;n.className=v.className;
+      v.parentNode.replaceChild(n,v);v.pause();v.removeAttribute('src');
+      if(tocava)n.play().catch(function(){});
+      pronto(n);fim();
+    }
+    n.addEventListener('loadeddata',function(){
+      var t=v.currentTime||0;
+      if(t>.05&&n.duration&&isFinite(n.duration)){n.addEventListener('seeked',troca,{once:true});try{n.currentTime=t%n.duration;}catch(e){troca();}}
+      else troca();
+    },{once:true});
+    n.addEventListener('error',function(){URL.revokeObjectURL(u);fim();},{once:true});
+    setTimeout(fim,20000);
+    n.src=u;n.load();
+  });}).catch(function(){v._hq=0;});});
+}
+function quandoTocar(v,f){if(v.readyState>=3&&!v.paused)f();else v.addEventListener('playing',f,{once:true});}
+
+/* fundo em vídeo que muda conforme a seção */
+var fv=[].slice.call(document.querySelectorAll('.palco video')),fsec=[].slice.call(document.querySelectorAll('[data-fundo]')),fat=-1,fp=RM,fb=document.getElementById('fctl');
+function frot(){fb.textContent=fp?'Reproduzir fundo':'Pausar fundo';fb.setAttribute('aria-pressed',fp);}
+function fundo(i){if(i===fat)return;fat=i;fv.forEach(function(v,j){if(j===i){v.classList.add('on');if(!fp)v.play().catch(function(){});quandoTocar(v,function(){melhora(fv[j],function(n){fv[j]=n;if(j!==fat){n.classList.remove('on');n.pause();}});});}else{v.classList.remove('on');v.pause();}});}
+function qual(){var m=window.innerHeight*.5,best=-1,bd=1e9;fsec.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=m&&r.bottom>=m){best=+s.dataset.fundo;bd=0;}else{var d=Math.min(Math.abs(r.top-m),Math.abs(r.bottom-m));if(d<bd){bd=d;best=+s.dataset.fundo;}}});fundo(best);}
+var ft=null;window.addEventListener('scroll',function(){if(ft)return;ft=setTimeout(function(){ft=null;qual();},120);},{passive:true});
+fb.addEventListener('click',function(){fp=!fp;var v=fv[fat];if(v){if(fp)v.pause();else v.play().catch(function(){});}frot();});
+frot();qual();
+window.addEventListener('load',function(){setTimeout(function(){fv.forEach(function(v){if(v.preload==='none'){v.preload='auto';v.load();}});},600);});
+
+/* abas de serviços */
+var abas=[].slice.call(document.querySelectorAll('.aba'));
+function sel(i,foco){abas.forEach(function(a,j){var on=j===i;a.setAttribute('aria-selected',on);a.tabIndex=on?0:-1;var p=document.getElementById('p'+j);p.hidden=!on;if(on){p.classList.remove('entra');void p.offsetWidth;p.classList.add('entra');}});if(foco)abas[i].focus();}
+abas.forEach(function(a,i){a.addEventListener('click',function(){sel(i);});a.addEventListener('keydown',function(e){var k=e.key,n=abas.length;if(k==='ArrowDown'||k==='ArrowRight'){e.preventDefault();sel((i+1)%n,true);}else if(k==='ArrowUp'||k==='ArrowLeft'){e.preventDefault();sel((i-1+n)%n,true);}else if(k==='Home'){e.preventDefault();sel(0,true);}else if(k==='End'){e.preventDefault();sel(n-1,true);}});});
+
+/* roda 360 */
+var F=[
+["Apontamento do consumo","Cada ferramenta que sai é registrada por máquina e por operação. É o dado que alimenta todos os outros controles."],
+["Gerenciamento dos rotativos","Controle das ferramentas rotativas ao longo da vida útil: montagem, uso, afiação e retorno."],
+["Relatórios de consumo","Consumo consolidado em relatórios periódicos, com gráficos e planilhas para a reunião mensal."],
+["Controle das quebras","Toda quebra é registrada e analisada, para atacar a causa e evitar que se repita."],
+["Controle de retrabalho","O retrabalho é medido e acompanhado, com o trabalho padronizado para reduzi-lo."],
+["Indicação de compra","O consumo real indica o que comprar e quando, em conjunto com compras e processos."],
+["Estoque enxuto","Menos valor parado em estoque, com o item certo disponível na hora da troca."],
+["Rastreabilidade das ferramentas","Cada ferramenta é rastreada no chão de fábrica e por aplicação no processo."],
+["Agilidade no atendimento","Rondas programadas e atendimento a emergências mantêm o operador na máquina."],
+["Organização e unificação do estoque","Um estoque único e organizado, com acesso controlado conforme as autorizações."]];
+var NS='http://www.w3.org/2000/svg',gn=document.getElementById('nos'),gt=document.getElementById('ticks'),pont=document.getElementById('ponteiro'),atual=0,giro=0,auto=null;
+for(var t=0;t<60;t++){var a=t/60*Math.PI*2,l=document.createElementNS(NS,'line'),g5=t%6===0;l.setAttribute('x1',300+Math.sin(a)*205);l.setAttribute('y1',300-Math.cos(a)*205);l.setAttribute('x2',300+Math.sin(a)*(205-(g5?16:8)));l.setAttribute('y2',300-Math.cos(a)*(205-(g5?16:8)));l.setAttribute('stroke',g5?'#FFFFFF':'rgba(255,255,255,.45)');l.setAttribute('stroke-width',g5?2:1);gt.appendChild(l);}
+var curto=["Consumo","Rotativos","Relatórios","Quebras","Retrabalho","Compra","Estoque enxuto","Rastreabilidade","Agilidade","Organização"];
+F.forEach(function(f,i){var a=i/F.length*Math.PI*2,x=300+Math.sin(a)*205,y=300-Math.cos(a)*205,g=document.createElementNS(NS,'g');g.setAttribute('class','no');g.setAttribute('role','button');g.setAttribute('tabindex','0');g.setAttribute('aria-label',f[0]);g.setAttribute('aria-pressed',i===0);
+ var h=document.createElementNS(NS,'circle');h.setAttribute('cx',x);h.setAttribute('cy',y);h.setAttribute('r',30);h.setAttribute('fill','transparent');
+ var c=document.createElementNS(NS,'circle');c.setAttribute('class','pt');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',12);
+ var tx2=document.createElementNS(NS,'text'),lx=300+Math.sin(a)*248,ly=300-Math.cos(a)*248;tx2.setAttribute('x',lx);tx2.setAttribute('y',ly+5);tx2.setAttribute('text-anchor',Math.abs(Math.sin(a))<.2?'middle':(Math.sin(a)>0?'start':'end'));tx2.textContent=curto[i];
+ g.appendChild(h);g.appendChild(c);g.appendChild(tx2);gn.appendChild(g);
+ g.addEventListener('click',function(){para();ir(i);});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();para();ir(i);}});});
+var nos=[].slice.call(gn.children);
+function ir(i){var n=F.length;i=(i+n)%n;var d=i-atual;if(d>n/2)d-=n;if(d<-n/2)d+=n;giro+=d*36;atual=i;pont.style.transform='rotate('+giro+'deg)';nos.forEach(function(g,j){g.setAttribute('aria-pressed',j===i);});
+ document.getElementById('ctit').textContent=F[i][0];document.getElementById('cdesc').textContent=F[i][1];document.getElementById('cgrau').textContent=(i*36)+'°';document.getElementById('cpos').textContent=(i+1)+' de '+n;}
+function para(){if(auto){clearInterval(auto);auto=null;}}
+document.getElementById('cant').addEventListener('click',function(){para();ir(atual-1);});
+document.getElementById('cprox').addEventListener('click',function(){para();ir(atual+1);});
+ir(0);
+if(!RM&&'IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!auto&&auto!==false)auto=setInterval(function(){ir(atual+1);},3600);}else if(auto){clearInterval(auto);auto=null;}});},{threshold:.35}).observe(document.getElementById('ciclo'));
+ document.querySelector('.roda').addEventListener('pointerdown',function(){para();auto=false;});document.querySelector('.passo').addEventListener('pointerdown',function(){para();auto=false;});}
+
+/* contagem do 10% */
+var dz=document.getElementById('dezn');
+if(!RM&&'IntersectionObserver' in window){dz.textContent='0';new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){o.disconnect();var n=0,iv=setInterval(function(){n++;dz.textContent=n;if(n>=10)clearInterval(iv);},70);}});},{threshold:.6}).observe(dz);}
+
+})();
+</script>
+<a class="nx-fab" href="https://wa.me/5547999110090?text=Ol%C3%A1%2C%20quero%20uma%20proposta%20da%20manta%20antichamas%20NERO." target="_blank" rel="noopener" aria-label="Pedir proposta da manta NERO pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H10l-5 4v-4H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/></svg><span>Proposta manta NERO</span></a>
+</body>
+</html>
