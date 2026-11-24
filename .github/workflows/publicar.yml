@@ -21,7 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Ferramentas
-        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg python3-pil
+        run: |
+          python3 -m pip install --break-system-packages -q pillow imageio-ffmpeg
+          sudo ln -sf "$(python3 -c 'import imageio_ffmpeg,glob,os; print(glob.glob(os.path.join(os.path.dirname(imageio_ffmpeg.__file__),"binaries","ffmpeg-*"))[0])')" /usr/local/bin/ffmpeg
+          ffmpeg -version | head -1
       - name: Montar o site
         run: python3 build.py index.html _site
       - name: Ajustes de conteudo
