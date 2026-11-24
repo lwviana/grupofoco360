@@ -25,7 +25,7 @@ jobs:
       - name: Montar o site
         run: python3 build.py index.html _site
       - name: Ajustes de conteudo
-        run: for f in ajustes.py ajustes2_panspar.py ajustes3_nero.py; do python3 "$f" _site/index.html; done
+        run: for f in ajustes.py ajustes2_panspar.py ajustes3_nero.py ajustes4_foco_nero.py; do python3 "$f" _site/index.html; done
       - name: Publicar no branch gh-pages
         run: |
           cd _site
